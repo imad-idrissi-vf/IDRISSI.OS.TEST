@@ -1,0 +1,77 @@
+{
+  "title": "Materials",
+  "addMaterial": "Add Material",
+  "search": {
+    "placeholder": "Search materials...",
+    "tags": "Search tags...",
+    "noTags": "No tags found"
+  },
+  "table": {
+    "title": "Title",
+    "type": "Type",
+    "campaign": "Campaign",
+    "tags": "Tags",
+    "status": "Status",
+    "noResults": "No materials found"
+  },
+  "type": {
+    "packaging": "Packaging",
+    "visual": "Visual",
+    "print": "Print",
+    "digital": "Digital"
+  },
+  "status": {
+    "active": "Active",
+    "draft": "Draft",
+    "archived": "Archived"
+  },
+  "form": {
+    "title": "Title",
+    "type": "Type",
+    "selectType": "Select type",
+    "status": "Status",
+    "selectStatus": "Select status",
+    "campaign": "Campaign",
+    "selectCampaign": "Select campaign",
+    "tags": "Tags",
+    "selectTags": "Select tags",
+    "fileUrl": "File URL",
+    "fileUrlPlaceholder": "Enter file URL or upload"
+  },
+  "edit": {
+    "title": "Edit Material"
+  },
+  "create": {
+    "title": "Create Material"
+  },
+  "bulk": {
+    "title": "Bulk Actions",
+    "description": "Selected {count} materials",
+    "archive": "Archive",
+    "assignCampaign": "Assign Campaign",
+    "assignCampaignDescription": "Choose a campaign to assign to selected materials",
+    "selectCampaign": "Select campaign",
+    "addTags": "Add Tags",
+    "addTagsDescription": "Add tags to selected materials",
+    "selectTags": "Select tags to add",
+    "delete": "Delete",
+    "deleteDescription": "Are you sure you want to delete {count} materials?"
+  },
+  "toast": {
+    "createSuccess": "Material Created",
+    "updateSuccess": "Material Updated",
+    "error": "Error",
+    "errorDescription": "An error occurred while saving the material",
+    "bulkArchiveSuccess": "Materials Archived",
+    "bulkArchiveDescription": "{count} materials have been archived",
+    "bulkAssignSuccess": "Campaign Assigned",
+    "bulkAssignDescription": "{count} materials moved to {campaign}",
+    "bulkTagSuccess": "Tags Added",
+    "bulkTagDescription": "Added {tagCount} tags to {count} materials",
+    "bulkDeleteSuccess": "Materials Deleted",
+    "bulkDeleteDescription": "{count} materials have been deleted"
+  },
+  "selected": "{count} selected",
+  "selectAll": "Select all",
+  "noPreview": "No preview available"
+} 

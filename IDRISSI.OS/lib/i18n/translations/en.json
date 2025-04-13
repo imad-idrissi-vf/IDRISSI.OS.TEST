@@ -1,0 +1,75 @@
+{
+  "materials": {
+    "title": "Materials",
+    "table": {
+      "title": "Title",
+      "type": "Type",
+      "campaign": "Campaign",
+      "tags": "Tags",
+      "status": "Status",
+      "notes": "Notes",
+      "noResults": "No materials found"
+    },
+    "type": {
+      "packaging": "Packaging",
+      "visual": "Visual",
+      "digital": "Digital",
+      "print": "Print"
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Active",
+      "archived": "Archived"
+    },
+    "filter": {
+      "type": "Type",
+      "allTypes": "All types",
+      "campaign": "Campaign",
+      "allCampaigns": "All campaigns",
+      "tags": "Tags"
+    },
+    "search": {
+      "placeholder": "Search materials...",
+      "tags": "Search tags...",
+      "noTags": "No tags found"
+    },
+    "showing": {
+      "all": "Showing all {count} materials",
+      "filtered": "Showing {filtered} of {total} materials"
+    },
+    "clearFilters": "Clear filters",
+    "noCampaign": "No campaign",
+    "selected": "{count} selected",
+    "selectAll": "Select all materials",
+    "selectRow": "Select {title}",
+    "actions": {
+      "edit": "Edit material",
+      "delete": "Delete",
+      "archive": "Archive",
+      "assignCampaign": "Assign campaign",
+      "addTags": "Add tags"
+    },
+    "toast": {
+      "bulkArchiveSuccess": "Materials archived",
+      "bulkArchiveDescription": "{count} materials have been archived",
+      "bulkAssignSuccess": "Campaign assigned",
+      "bulkAssignDescription": "Campaign assigned to {count} materials",
+      "bulkTagSuccess": "Tags added",
+      "bulkTagDescription": "Tags added to {count} materials",
+      "bulkDeleteSuccess": "Materials deleted",
+      "bulkDeleteDescription": "{count} materials have been deleted"
+    }
+  },
+  "common": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "apply": "Apply",
+    "clear": "Clear",
+    "error": "Error",
+    "unknownError": "An unknown error occurred",
+    "openMenu": "Open menu"
+  }
+} 

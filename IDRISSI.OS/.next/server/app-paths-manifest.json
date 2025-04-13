@@ -1,0 +1,9 @@
+{
+  "/production/materials/page": "app/production/materials/page.js",
+  "/production/manufacturers/page": "app/production/manufacturers/page.js",
+  "/capital-control/overview/page": "app/capital-control/overview/page.js",
+  "/page": "app/page.js",
+  "/production/page": "app/production/page.js",
+  "/vision-lock/principles/page": "app/vision-lock/principles/page.js",
+  "/production/products/page": "app/production/products/page.js"
+}

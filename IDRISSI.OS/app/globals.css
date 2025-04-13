@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 97%; /* Light gray for cards in light mode */
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 94%; /* Slightly darker for secondary elements */
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 94%; /* Light gray for muted elements */
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 94%; /* Light gray for accent elements */
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%; /* Light gray border */
+    --input: 0 0% 88%;
+    --ring: 0 0% 88%;
+
+    --radius: 1.25rem;
+  }
+
+  .dark {
+    --background: 300 2% 2%;
+    --foreground: 0 0% 100%;
+
+    --card: 300 2% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 300 2% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 300 2% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 300 2% 10%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 300 2% 10%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 300 2% 15%;
+    --input: 300 2% 15%;
+    --ring: 300 2% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom font classes */
+.font-helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.font-roboto {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Custom animations */
+@keyframes toggle-switch {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(28px);
+  }
+}
+
+.toggle-switch-animation {
+  animation: toggle-switch 0.4s ease-in-out forwards;
+}
+
+.toggle-switch-animation-reverse {
+  animation: toggle-switch 0.4s ease-in-out reverse;
+}
+
+/* Progress bar animation */
+@keyframes progress-fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress-width, 0%);
+  }
+}
+
+.animate-progress-fill {
+  animation: progress-fill 1.5s ease-out forwards;
+}
+
+/* Custom scrollbar for the dashboard */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.light .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode specific styles */
+.light {
+  --section-bg: 0 0% 91%; /* #e7e7e7 */
+  --container-bg: 0 0% 94%; /* #eeeeee */
+  --border-color: 0 0% 88%; /* #e0e0e0 */
+}
+
+/* Apply light mode styles to specific elements */
+.light .card {
+  background-color: hsl(var(--card));
+  border-color: hsl(var(--border-color));
+}
+
+.light .section {
+  background-color: hsl(var(--section-bg));
+}
+
+.light .container {
+  background-color: hsl(var(--container-bg));
+  border-color: hsl(var(--border-color));
+}
+
+/* Add background color to main content area in light mode */
+.light main {
+  background-color: hsl(var(--section-bg));
+}
+
+/* Theme toggle button styles */
+.light button[aria-label="Toggle theme"] {
+  background-color: hsl(var(--section-bg)); /* Using the same gray as sections (#e7e7e7) */
+  border: 1px solid hsl(var(--border-color));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.light button[aria-label="Toggle theme"]:hover {
+  background-color: hsl(var(--muted));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.light button[aria-label="Toggle theme"] div {
+  background-color: hsl(var(--primary));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  left: 4px;
+}
+
+.light button[aria-label="Toggle theme"] div svg {
+  color: hsl(var(--primary-foreground));
+}
